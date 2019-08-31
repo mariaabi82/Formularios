@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    </link>
+    <title>Formularios</title>
+
+</head>
+
+
+<body>
+
+    <h1>Formulario de registro</h1>
+
+    <form action="/contacto" method="post">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre_id"> Nombre
+                <input id="nombre_id" required placeholder="Máximo 30 caracteres" type="text" name="nombre">
+            </label>
+
+            <label for="apellido_id">Apellido
+                <input id="apellido_id" type="text" name="apellido">
+            </label>
+
+            <label>Email
+                <input type="email" name="email">
+            </label>
+
+            <label>Edad
+                <input maxlenght="2" type="number" name="edad">
+            </label>
+
+            <label>Contraseña
+                <input type="password" name="contraseña" maxlength="8" placeholder="Max 8 caracteres">
+            </label>
+
+            <label>Código de área
+                <input type="number" name="codigo_de_area">
+            </label>
+
+            <label>Teléfono
+                <input placeholder="sin código de área" type="number" name="telefono">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            <label>Te gustan los
+                <input type="checkbox" name="mascota" value="gatos">gatos
+                <input type="checkbox" name="mascota" value="perros">perros
+                <input type="checkbox" name="mascota" value="todos">todos
+                <input type="checkbox" name="mascota" value="ninguno">ninguno
+            </label>
+
+            <label>Fecha de nacimiento
+                <input type="date">
+            </label>
+
+            <label>Página web
+                <input type="url" value="www.">
+            </label>
+
+            <label>Subir foto
+                <input type="file" name="archive">
+            </label>
+
+            <label><p>Describite brevemente</p></label>
+            <label><textarea name="textarea" placeholder="¿Qué te gusta hacer?" id="" cols="50" rows="8"></textarea>
+            </label>
+
+            <p>Lugar de residencia
+                <select name="lugar" id="">
+                    <option value="BUE">Buenos Aires</option>
+                    <option value="LAP">La Plata</option>
+                    <option value="MDQ">Mar del Plata</option>
+                    <option value="MIR">Miramar</option>
+                    <option value="CDB">Córdoba</option>
+                    <option value="MDZ">Mendoza</option>
+                    <option value="AUS">Australia</option>
+                    <option value="ING">Inglaterra</option>
+                    <option value="LIM">Perú</option>
+                </select>
+            </p>
+
+            <label>¿Adónde te gustaría viajar para festejar el egreso de Ada?</label>
+            <label><select name="vacaciones" size="4" id="">
+                    <option value="BUE">Buenos Aires</option>
+                    <option value="LAP">La Plata</option>
+                    <option value="MDQ">Mar del Plata</option>
+                    <option value="MIR">Miramar</option>
+                    <option value="CDB">Córdoba</option>
+                    <option value="MDZ">Mendoza</option>
+                    <option value="AUS">Australia</option>
+                    <option value="ING">Inglaterra</option>
+                    <option value="LIM">Perú</option>
+                </select>
+            </label>
+
+        </fieldset>
+
+
+        <label>Acepta términos y condiciones
+            <input checked type="radio" name="terminos" value="si">Si
+            <input type="radio" name="terminos" value="no">No
+        </label>
+
+
+
+
+        <input type="submit" value="Enviar">
+
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>

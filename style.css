@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+body{
+    background-color: #b4faea;
+
+}
+
+h1, legend, label, p{
+    font-family: 'Manjari', sans-serif;
+}
+
+label{
+    font-size: 12px;
+}
+
+input[type=text], [type=email], [type=number], [type=password]{
+    border: none;
+    width: 200px;
+    height: 30;
+    padding-left: 5px;
+    font-family: 'Manjari', sans-serif;
+    font-size: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 2px;
+    outline: none;  
+}
+
+input[type=text]:active{
+    background-color: lightgrey;
+}
+
+input[type=text]:focus{
+    background-color: #8ad4c3;
+}
+
+input[type=text]::placeholder{
+    border: none;
+    width: 200px;
+    height: 30;
+    padding-left: 2px;
+    font-family: 'Manjari', sans-serif;
+    font-size: 10px;
+}
+
+input[type=date]{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-bottom: 5px lightseagreen;
+}
+
+select{
+    width: 200px;
+    height: 30px;
+    border: 1px solid lightseagreen;
+}
+
+fieldset{
+    border: 2px solid lightseagreen;
+}
